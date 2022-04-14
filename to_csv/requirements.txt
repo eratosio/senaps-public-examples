@@ -1,0 +1,4 @@
+pandas~=1.4.2
+requests~=2.27.1
+git+https://bitbucket.csiro.au/scm/sc/as-models-api.git#egg=as_models
+git+https://bitbucket.csiro.au/scm/sc/sensor-api-python-client.git#egg=senaps_sensor

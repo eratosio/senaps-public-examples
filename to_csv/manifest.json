@@ -1,0 +1,41 @@
+{
+  "baseImage": "B415DE8D-4886-4E43-B33A-692DB431C99E",
+  "organisationId": "eratos",
+  "groupIds": [
+    "eratos_sandbox"
+  ],
+  "entrypoint": "model.py",
+  "dependencies": [],
+  "models": [
+    {
+      "id": "eratos.sandbox.examples.to_csv",
+      "name": "Eratos Example Model: To CSV",
+      "version": "0.0.0",
+      "description": "Loads a set of data streams and outputs the results as a csv document",
+      "method": "",
+      "ports": [
+        {
+          "portName": "input_streams",
+          "required": true,
+          "type": "stream[]",
+          "description": "A list of streams that will be fetched and output as csv",
+          "direction": "input"
+        },
+        {
+          "portName": "settings",
+          "required": false,
+          "type": "document",
+          "description": "Optional settings document { start_date: isodate, end_date: isodate, limit: default 1000, desc: default true }",
+          "direction": "input"
+        },
+        {
+          "portName": "output",
+          "required": true,
+          "type": "document",
+          "description": "Output CSV",
+          "direction": "output"
+        }
+      ]
+    }
+  ]
+}
